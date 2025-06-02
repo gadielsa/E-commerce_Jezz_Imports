@@ -11,34 +11,34 @@ const navbar = () => {
       <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
 
         <NavLink to='/' className={'flex flex-col items-center gap-1'}>
-          <p>HOME</p>
+          <p>PÁGINA INICIAL</p>
           <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
         </NavLink>
         <NavLink to='/collection' className={'flex flex-col items-center gap-1'}>
-          <p>COLLECTION</p>
+          <p>COLEÇÃO</p>
           <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
         </NavLink>
         <NavLink to='/about' className={'flex flex-col items-center gap-1'}>
-          <p>ABOUT</p>
+          <p>SOBRE NÓS</p>
           <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
         </NavLink>
         <NavLink to='/contact' className={'flex flex-col items-center gap-1'}>
-          <p>CONTACT</p>
+          <p>CONTATO</p>
           <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
         </NavLink>
 
       </ul>
 
       <div className='felx items-center gap-6'>
-          <img src={assets.search_icon} className='w-5 cursor-pointer' alt="" />
+          <img src={assets.search_icon} className='w-6 cursor-pointer' alt="" />
 
           <div className='group relative'>
-            <img src={assets.user} className='w-5 cursor-pointer' alt="" />
+            <img src={assets.user} className='w-6 cursor-pointer' alt="" />
             <div className='group-hover:block hidden absolute dropdown-menu right-o pt-4'>
                 <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded'>
-                  <p className='cursor-pointer hover:text-black'>My Profile</p>
-                  <p className='cursor-pointer hover:text-black'>Orders</p>
-                  <p className='cursor-pointer hover:text-black'>Logout</p>
+                  <p className='cursor-pointer hover:text-black'>Perfil</p>
+                  <p className='cursor-pointer hover:text-black'>Pedidos</p>
+                  <p className='cursor-pointer hover:text-black'>Sair</p>
                 </div>
             </div>
           </div>
