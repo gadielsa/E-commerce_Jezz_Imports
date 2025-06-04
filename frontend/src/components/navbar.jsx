@@ -1,8 +1,8 @@
 import React from 'react'
 import {assets} from '../assets/assets'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
-const navbar = () => {
+const Navbar = () => {
   return (
     <div className='flex items-center justify-between py-5 font-medium'>
 
@@ -29,7 +29,7 @@ const navbar = () => {
 
       </ul>
 
-      <div className='felx items-center gap-6'>
+      <div className='flex items-center gap-6'>
           <img src={assets.search_icon} className='w-6 cursor-pointer' alt="" />
 
           <div className='group relative'>
@@ -42,9 +42,13 @@ const navbar = () => {
                 </div>
             </div>
           </div>
+          <Link to='/cart' className='relative'>
+            <img src={assets.shopping_bag} className='w-6 min-w-6' alt="" />
+            <p className='absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]'>3</p>
+          </Link>
       </div>
     </div>
   )
 }
 
-export default navbar 
+export default Navbar 
